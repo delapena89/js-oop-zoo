@@ -12,8 +12,8 @@ Animal.prototype.oink = function(){
     return "I'm not a pig";
   }
 };
-Animal.prototype.growUp = function (age) {
-		this.age = age += 1;
+Animal.prototype.growUp = function () {
+		this.age = this.age += 1;
 };
 
 Animal.prototype.feed = function () {

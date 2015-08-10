@@ -14,23 +14,28 @@ describe('Zoo', function(){
 
   describe('#changeLocation', function(){
     it('should change locations', function(){
-      // add spec
+      zoo.changeLocation("Denver");
+      expect(zoo.location).toBe("Denver");
     });
   });
 
   describe('#open', function(){
     it('should change status to open', function(){
-      // add spec
+      zoo.open();
+      expect(zoo.status).toBe('open');
     });
   });
 
 
   describe('#isOpen', function(){
     it('should see if the zoo is open', function(){
-      // add spec
+      zoo.open();
+      zoo.isOpen();
+      expect(zoo.isOpen()).toBe('Open!');
     });
     it('should see if the zoo is closed', function(){
-      // add spec
+      zoo.close();
+      expect(zoo.status).toBe('closed');
     });
   });
 
